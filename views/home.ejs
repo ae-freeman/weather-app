@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Today's weather</title>
+
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+
+
+</head>
+
+<body>
+
+
+  <div class="jumbotron jumbotron-fluid custom-color">
+    <div class="title">
+      <h1>Today's weather</h1>
+    </div>
+  </div>
+
+  <!-- Make search bar only in the middle -->
+  <form class="form custom-form" action="/" method="post">
+    <input class="form-control mr-sm-2 mx-auto" name="city" type="search" placeholder="Search" aria-label="Search">
+    <div class="custom-button">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Find Weather</button>
+    </div>
+  </form>
+
+  <!-- Put result of weather in card -->
+
+  <div class="card mx-auto" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%-temp%> C</h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%-cityName%></h6>
+      <!-- <img src="http://openweathermap.org/img/wn/" + 10d + ""@2x.png" alt=""> -->
+
+    </div>
+  </div>
+
+  <!-- What to show:
+- The requested city
+- the temperature + degrees Celsius
+- The main icon about the weather
+    - pass over url + icon code -->
+
+
+
+
+
+</body>
+
+</html>
