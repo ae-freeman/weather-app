@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+.custom-color {
+  background-color: #5c94bd;
+}
+
+.custom-form {
+  width: 20%;
+  margin-left: 40%;
+  padding-bottom: 2%;
+}
+
+.custom-button {
+  padding: 2%;
+}
