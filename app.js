@@ -58,6 +58,10 @@ app.post("/", function(req, res){
 
 
 
-app.listen(3000, function(){
-  console.log("Server is running on port 3000");
+// Set up port
+// Run the server on port 3000, unless it is deployed (Heroku sets process.env.PORT)
+const port = process.env.PORT || 3000;
+// Server will listen on the specified port and will log a message when this occurs
+app.listen(port, function() {
+  console.log("Port is running on " + port);
 });
